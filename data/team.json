@@ -1,0 +1,76 @@
+{
+  "teamMembers": [
+    {
+      "id": "tm-001",
+      "name": "Rajesh Nakoda",
+      "position": "Founder & Managing Director",
+      "department": "Leadership",
+      "experience": "15+ years",
+      "image": "assets/images/team/rajesh-nakoda.jpg",
+      "bio": "Visionary leader with over 15 years in metal manufacturing. Started Nakoda Metals with a mission to provide premium quality brass and copper solutions to industries across India.",
+      "expertise": ["Business Strategy", "Metal Manufacturing", "Quality Control", "Market Development"],
+      "education": "B.Tech Metallurgy, IIT Bombay",
+      "email": "rajesh@nakodametals.com",
+      "linkedin": "https://linkedin.com/in/rajesh-nakoda",
+      "achievements": [
+        "Founded Nakoda Metals in 2014",
+        "Expanded operations to 5 states",
+        "ISO 9001:2015 certification leader"
+      ]
+    },
+    {
+      "id": "tm-002",
+      "name": "Priya Nakoda",
+      "position": "Operations Director",
+      "department": "Operations",
+      "experience": "12+ years",
+      "image": "assets/images/team/priya-nakoda.jpg",
+      "bio": "Operations expert ensuring seamless production and delivery. Priya oversees our manufacturing processes and maintains our commitment to quality and timely delivery.",
+      "expertise": ["Operations Management", "Supply Chain", "Process Optimization", "Quality Assurance"],
+      "education": "MBA Operations, XLRI Jamshedpur",
+      "email": "priya@nakodametals.com",
+      "linkedin": "https://linkedin.com/in/priya-nakoda",
+      "achievements": [
+        "Reduced production time by 30%",
+        "Implemented lean manufacturing",
+        "Zero-defect quality record"
+      ]
+    },
+    {
+      "id": "tm-003",
+      "name": "Amit Sharma",
+      "position": "Technical Director",
+      "department": "Engineering",
+      "experience": "18+ years",
+      "image": "assets/images/team/amit-sharma.jpg",
+      "bio": "Technical mastermind behind our innovative manufacturing processes. Amit ensures our products meet international standards while continuously improving our production capabilities.",
+      "expertise": ["Metallurgical Engineering", "Product Development", "R&D", "Technical Innovation"],
+      "education": "M.Tech Metallurgy, NIT Surat",
+      "email": "amit@nakodametals.com",
+      "linkedin": "https://linkedin.com/in/amit-sharma-metals",
+      "achievements": [
+        "Developed proprietary alloy formulations",
+        "15+ technical patents",
+        "Industry innovation award 2023"
+      ]
+    },
+    {
+      "id": "tm-004",
+      "name": "Kavita Patel",
+      "position": "Sales & Marketing Director",
+      "department": "Sales",
+      "experience": "10+ years",
+      "image": "assets/images/team/kavita-patel.jpg",
+      "bio": "Dynamic sales leader driving our market expansion and customer relationships. Kavita has built strong partnerships with major industrial clients across India.",
+      "expertise": ["Sales Strategy", "Client Relations", "Market Analysis", "Business Development"],
+      "education": "MBA Marketing, SP Jain Mumbai",
+      "email": "kavita@nakodametals.com",
+      "linkedin": "https://linkedin.com/in/kavita-patel-sales",
+      "achievements": [
+        "Increased sales by 200% in 3 years",
+        "Established 500+ client relationships",
+        "Top performer award 2022, 2023"
+      ]
+    }
+  ]
+}

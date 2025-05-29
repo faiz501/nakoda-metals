@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Brass Wire Products - Nakoda Metals Vapi</title>
+    <meta name="description"
+        content="Explore our premium brass wire collection in various sizes (0.3mm to 3.0mm). High-quality brass wires for industrial, electrical, and decorative applications.">
+    <meta name="keywords" content="brass wire, copper wire, metal wire manufacturer, Vapi, Gujarat, industrial wire">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation (same as main page) -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/icons/logo.svg" alt="Nakoda Metals Logo" class="logo-img">
+                <div class="logo-text">
+                    <h2>Nakoda Metals</h2>
+                    <span class="location">Vapi, Gujarat</span>
+                </div>
+            </div>
+            <!-- Fixed Navigation for all pages -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="team.html" class="nav-link">Our Team</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+        <div class="hero-background">
+            <img src="assets/images/products/brass-wire-showcase.jpg" alt="Premium Brass Wire Collection"
+                class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Premium <span class="highlight">Brass Wire</span> Collection</h1>
+            <p class="hero-subtitle">Discover our comprehensive range of high-quality brass wires in various diameters,
+                engineered for precision and durability.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label">Wire Sizes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">99%</span>
+                    <span class="stat-label">Purity</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Product Filters -->
+    <section class="product-filters section-padding" data-scroll>
+        <div class="container">
+            <div class="filter-controls">
+                <h2>Find Your Perfect Wire</h2>
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="featured">Featured</button>
+                    <button class="filter-btn" data-filter="fine">Fine (≤0.5mm)</button>
+                    <button class="filter-btn" data-filter="standard">Standard (0.6-2.0mm)</button>
+                    <button class="filter-btn" data-filter="heavy">Heavy (>2.0mm)</button>
+                    <button class="filter-btn" data-filter="in-stock">In Stock</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="product-search"
+                        placeholder="Search by diameter, application, or specification...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-showcase section-padding" data-scroll>
+        <div class="container">
+            <div id="products-loading" class="loading-container">
+                <div class="loading-spinner"></div>
+                <p>Loading premium brass wires...</p>
+            </div>
+
+            <div id="products-grid" class="products-grid" style="display: none;">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+
+            <div id="no-products" class="no-products" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No products found</h3>
+                <p>Try adjusting your filters or search terms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content product-modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="products-cta section-padding" data-scroll>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Custom Specifications?</h2>
+                <p>We manufacture brass wires to your exact requirements. Get in touch with our technical team for
+                    custom solutions.</p>
+                <div class="cta-buttons">
+                    <a href="#quote-modal" class="btn btn-primary" id="request-quote-btn">Request Quote</a>
+                    <a href="index.html#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Request Modal -->
+    <div id="quote-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <h3>Request Custom Quote</h3>
+                <p>Tell us your requirements and we'll provide a detailed quote within 24 hours.</p>
+            </div>
+            <form id="quote-form" class="quote-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="quote-name">Full Name *</label>
+                        <input type="text" id="quote-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-company">Company Name</label>
+                        <input type="text" id="quote-company" name="company">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="quote-email">Email Address *</label>
+                        <input type="email" id="quote-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-phone">Phone Number</label>
+                        <input type="tel" id="quote-phone" name="phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="quote-diameter">Wire Diameter Required</label>
+                    <input type="text" id="quote-diameter" name="diameter" placeholder="e.g., 1.2mm, 0.8mm">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="quote-quantity">Quantity Required</label>
+                        <input type="text" id="quote-quantity" name="quantity" placeholder="e.g., 100kg, 500kg">
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-application">Application</label>
+                        <select id="quote-application" name="application">
+                            <option value="">Select Application</option>
+                            <option value="electrical">Electrical Components</option>
+                            <option value="automotive">Automotive Parts</option>
+                            <option value="jewelry">Jewelry Making</option>
+                            <option value="industrial">Industrial Manufacturing</option>
+                            <option value="construction">Construction</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="quote-specifications">Special Requirements</label>
+                    <textarea id="quote-specifications" name="specifications" rows="4"
+                        placeholder="Please describe any special requirements, tolerances, or specifications..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Quote Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer (same as main page) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/images/icons/logo-white.svg" alt="Nakoda Metals Logo" class="footer-logo">
+                    <h3>Nakoda Metals</h3>
+                    <p>Premium brass and copper wire manufacturer in Vapi, Gujarat. Your trusted partner for quality
+                        metal solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li>Brass Wire (0.3mm - 3.0mm)</li>
+                        <li>Copper Wire Manufacturing</li>
+                        <li>Custom Metal Solutions</li>
+                        <li>Industrial Supplies</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> GIDC Vapi, Gujarat, India</p>
+                    <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@nakodametals.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nakoda Metals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/modules/utils.js"></script>
+    <script src="js/modules/api.js"></script>
+    <script src="js/products.js"></script>
+</body>
+
+</html>
